@@ -1,0 +1,26 @@
+# .dockerignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+env
+venv
+.venv
+.git
+.gitignore
+README.md
+.dockerignore
+Dockerfile
+docker-compose.yml
+models/          # Модель будет скачана или подключена через volume
+logs/
+*.log
+*.onnx
+*.pth
+*.pt

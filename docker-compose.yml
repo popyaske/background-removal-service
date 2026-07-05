@@ -1,0 +1,16 @@
+services:
+  birefnet:
+    build: .
+    container_name: birefnet-service
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./models:/app/models
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
