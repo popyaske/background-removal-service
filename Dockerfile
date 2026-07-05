@@ -16,7 +16,7 @@ RUN python3 -m venv /venv
 ENV PATH="/venv/bin:$PATH"
 
 # Копируем зависимости и устанавливаем
-COPY requirements.txt .
+COPY requirements.lock .
 RUN pip install --no-cache-dir -r requirements.lock
 
 # Копируем код приложения и лицензию
