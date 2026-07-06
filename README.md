@@ -53,9 +53,10 @@ background_removal_service/
 
 ## ⚙️ Требования
 
-- **Docker** (20.10+)
-- **Docker Compose** (2.0+)
-- **NVIDIA GPU** (для ускорения) с драйверами и **NVIDIA Container Toolkit** (установлен на хосте)
+- **Docker**: 20.10+
+- **Docker Compose**: 2.0+
+- **NVIDIA Driver**: 610.62+ (для CUDA 13.3+)
+- **NVIDIA CUDA Toolkit**: 13.3+
 - Для запуска без GPU – достаточно CPU (но будет медленнее)
 
 ---
